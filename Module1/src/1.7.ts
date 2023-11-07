@@ -6,7 +6,7 @@
   //spreed operator
   //rest operator
  function myfun(...name:string[]){
-        name.forEach((n)=>console.log(n))
+        name.forEach((n:string)=>console.log(n))
  }
  myfun('tamim', 'tanin','tnajid');
 
