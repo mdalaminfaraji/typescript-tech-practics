@@ -2047,6 +2047,8 @@ const AreaString: TAreaConverted<{
 
 ---
 
+
+
 # Object Oreinted Programming In TypeScript(OOP)
 
 ## What is OOP?
