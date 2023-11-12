@@ -2611,7 +2611,7 @@ getAnimalAndMakeSound(pig);
 
  ### What are some benefits of using TypeScript over JavaScript in a project?
 
-  - # Answer:
+  - ### Answer:
     
       ### TypeScript offers a range of benefits over JavaScript:
       - including improved type safety, tooling, and integration.
@@ -2620,7 +2620,7 @@ getAnimalAndMakeSound(pig);
 
 ### What is the purpose of the optional chaining (?.) and nullish coalescing (??) operators in TypeScript, and how do they work? Provide an example for each
 
-   # Answer:
+   ### Answer:
    - Optional chainiing(?.):
          -- Optonal chanining operater safely access property of an object. if any property missing don't show error. 
          - Example:
@@ -2687,39 +2687,40 @@ getAnimalAndMakeSound(pig);
          ```
 
 
-# How do you handle asynchronous operations in TypeScript, and what are the advantages of using async/await over callbacks or Promises?.
+## How do you handle asynchronous operations in TypeScript, and what are the advantages of using async/await over callbacks or Promises?.
 
 
- - Answer: 
-         ```ts
-          | Name      | Age | Location       |
-          |-----------|-----|----------------|
-          | John      | 25  | New York       |
-          | Jane      | 30  | San Francisco  |
-          | Bob       | 22  | Los Angeles    |
-          
+ - ### Answer: 
+
+           
+
+| Callbacks                             |Promises                           | Async/Await                      |
+|---------------------------------------|-----------------------------------|----------------------------------|
+|(`function(err, result) { }`)          | `.then()` and `.catch()`          | `async function () { await }`    |
+
+| Callback hell (nested and hard-to-read code)| Cleaner, more structured syntax| Improved readability, looks synchronous|
 
 
+| Manual error handling within each callback| `.catch()` for error handling | Try-catch blocks for error handling|
+
+| Deeply nested callbacks             | Chaining with `.then()`             | Linear, sequential code flow     |
+
+| Passing values through multiple callbacks| Values passed through `.then()` | Directly returns values with `await`|
 
 
-         
-         
-         
-         ```
+| Challenging due to nested callbacks    | Easier debugging with `.catch()` | Easier to read and debug with try-catch|
 
-         | Feature                      | Callbacks                                      | Promises                                       | Async/Await                                   |
-|------------------------------|------------------------------------------------|------------------------------------------------|-----------------------------------------------|
-| **Syntax**                   | Nested functions (`function(err, result) { }`) | `.then()` and `.catch()` methods                | `async function () { await }`                  |
-| **Readability**              | Callback hell (nested and hard-to-read code)   | Cleaner, more structured syntax                | Improved readability, looks synchronous       |
-| **Error Handling**           | Manual error handling within each callback     | `.catch()` for error handling                  | Try-catch blocks for error handling           |
-| **Chaining**                 | Deeply nested callbacks                         | Chaining with `.then()`                        | Linear, sequential code flow                  |
-| **Return Values**            | Passing values through multiple callbacks      | Values passed through `.then()`                | Directly returns values with `await`          |
-| **Debugging**                | Challenging due to nested callbacks             | Easier debugging with `.catch()`               | Easier to read and debug with try-catch       |
-| **Promise Composition**      | Additional libraries for better control        | Built-in chaining with `.then()`               | Simplified with direct use of `await`         |
-| **Use Cases**                | Older asynchronous patterns, simple scenarios | General-purpose asynchronous operations      | Preferred for modern, readable code            |
-| **Error Handling (multiple)**| Callbacks need additional patterns              | `.catch()` at the end of a promise chain       | Easily handles errors with try-catch for each |
-| **Adoption in Libraries**    | Found in older libraries and APIs              | Commonly used in modern libraries and APIs     | Increasingly adopted in modern libraries/APIs |
-| **Conciseness**              | Code can become verbose and less expressive    | More concise, but still involves chaining     | Highly concise, resembling synchronous code  |
+
+| Additional libraries for better control | Built-in chaining with `.then()`| Simplified with direct use of `await`|
+
+| Older asynchronous patterns, simple scenarios | General-purpose asynchronous operations  | Preferred for modern, readable code|
+
+
+| Callbacks need additional patterns | `.catch()` at the end of a promise chain  | Easily handles errors with try-catch for each |
+
+| Found in older libraries and APIs | Commonly used in modern libraries and APIs     | Increasingly adopted in modern libraries/APIs |
+
+| Code can become verbose and less expressive    | More concise, but still involves chaining     | Highly concise, resembling synchronous code  |
 
 
 
