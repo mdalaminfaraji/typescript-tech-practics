@@ -2725,3 +2725,27 @@ getAnimalAndMakeSound(pig);
 
 
 
+```
+| Feature                      | Callbacks                                      | Promises                                       | Async/Await                                   |
+|------------------------------|------------------------------------------------|------------------------------------------------|-----------------------------------------------|
+| **Syntax**                   | Nested functions (`function(err, result) { }`) | `.then()` and `.catch()` methods                | `async function () { await }`                  |
+| **Readability**              | Callback hell (nested and hard-to-read code)   | Cleaner, more structured syntax                | Improved readability, looks synchronous       |
+| **Error Handling**           | Manual error handling within each callback     | `.catch()` for error handling                  | Try-catch blocks for error handling           |
+| **Chaining**                 | Deeply nested callbacks                         | Chaining with `.then()`                        | Linear, sequential code flow                  |
+| **Return Values**            | Passing values through multiple callbacks      | Values passed through `.then()`                | Directly returns values with `await`          |
+| **Debugging**                | Challenging due to nested callbacks             | Easier debugging with `.catch()`               | Easier to read and debug with try-catch       |
+| **Promise Composition**      | Additional libraries for better control        | Built-in chaining with `.then()`               | Simplified with direct use of `await`         |
+| **Use Cases**                | Older asynchronous patterns, simple scenarios | General-purpose asynchronous operations      | Preferred for modern, readable code            |
+| **Error Handling (multiple)**| Callbacks need additional patterns              | `.catch()` at the end of a promise chain       | Easily handles errors with try-catch for each |
+| **Adoption in Libraries**    | Found in older libraries and APIs              | Commonly used in modern libraries and APIs     | Increasingly adopted in modern libraries/APIs |
+| **Conciseness**              | Code can become verbose and less expressive    | More concise, but still involves chaining     | Highly concise, resembling synchronous code  |
+
+
+
+
+
+```
+
+
+
+
