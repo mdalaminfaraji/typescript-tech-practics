@@ -19,4 +19,14 @@
     const toy = new Car1(54, 345);
     const rectangle = toy.area();
     console.log(rectangle);
+    class Vehicle2 {
+    }
+    class ToyotaCar extends Vehicle2 {
+        startCar() {
+            console.log('i ama abstract');
+        }
+        stopCar() {
+            console.log("I am implement");
+        }
+    }
 }
